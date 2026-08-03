@@ -86,7 +86,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12">
           {/* Contact Info (Dark Card) */}
           <RevealSection className="lg:col-span-5 relative z-10">
-            <div className="bg-primary text-surface p-12 lg:p-16 h-full flex flex-col justify-center">
+            <div className="bg-primary text-surface p-12 lg:p-16 rounded-2xl h-full flex flex-col justify-center">
               <h3 className="text-sm uppercase tracking-[0.3em] text-secondary font-bold mb-12">Connect With Us</h3>
               
               <div className="space-y-12">
@@ -129,7 +129,7 @@ export default function Contact() {
 
           {/* Contact Form */}
           <RevealSection className="lg:col-span-7 delay-200">
-            <div className="bg-surface p-12 lg:p-24 shadow-[0_30px_60px_rgb(0,0,0,0.05)] lg:-ml-12 relative h-full">
+            <div className="bg-surface p-12 lg:p-24 shadow-[0_30px_60px_rgb(0,0,0,0.05)] rounded-2xl lg:-ml-12 relative h-full">
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-12 tracking-tighter">Send a Message</h2>
               
               {isSuccess && (
@@ -195,7 +195,7 @@ export default function Contact() {
                   <Button 
                     type="submit"
                     variant="primary"
-                    className="w-full md:w-auto px-16 rounded-none tracking-widest uppercase text-sm font-bold"
+                    className="w-full md:w-auto px-16 tracking-widest uppercase text-sm font-bold"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? 'Sending...' : 'Send Inquiry'}

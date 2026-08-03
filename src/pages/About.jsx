@@ -43,7 +43,7 @@ export default function About() {
         <div className="relative mb-40 lg:mb-64">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <RevealSection className="lg:col-span-7 relative z-10">
-              <div className="bg-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.05)] rounded-none lg:-mr-32 relative">
+              <div className="bg-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.05)] rounded-2xl lg:-mr-32 relative">
                 <h3 className="text-sm uppercase tracking-[0.3em] text-secondary font-bold mb-6">Our Philosophy</h3>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 tracking-tighter">The Pursuit of the Perfect Pour</h2>
                 <p className="text-textMuted text-lg leading-relaxed mb-6 font-light">
@@ -77,7 +77,7 @@ export default function About() {
               />
             </RevealSection>
             <RevealSection className="lg:col-span-7 relative z-10 delay-200">
-              <div className="bg-primary text-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.15)] rounded-none lg:-ml-32 relative">
+              <div className="bg-primary text-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.15)] rounded-2xl lg:-ml-32 relative">
                 <h3 className="text-sm uppercase tracking-[0.3em] text-secondary font-bold mb-6">Our Sanctuary</h3>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 tracking-tighter">A Space for Community</h2>
                 <p className="text-surface/80 text-lg leading-relaxed mb-6 font-light">

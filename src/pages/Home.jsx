@@ -33,22 +33,22 @@ export default function Home() {
           />
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in-up mt-8">
-          <h1 className="text-6xl md:text-8xl font-serif font-bold text-surface mb-6 tracking-tight drop-shadow-lg">
-            Awaken Your Senses
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-slide-up mt-8">
+          <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-serif font-bold text-surface mb-8 tracking-tighter leading-[0.9] drop-shadow-2xl mix-blend-overlay">
+            Awaken Your Senses.
           </h1>
-          <p className="text-xl md:text-3xl text-surface/90 mb-12 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
+          <p className="text-xl md:text-3xl text-surface mb-16 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
             Experience artisanal coffee crafted with passion, precision, and the world's finest beans.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link to="/menu">
-              <Button variant="primary" className="w-full sm:w-auto text-lg px-10 py-5 animate-pulse-glow">
+              <Button variant="primary" className="w-full sm:w-auto text-sm tracking-[0.2em] uppercase px-12 py-5 font-bold">
                 Explore Menu
-                <ArrowRight className="ml-3" size={22} />
+                <ArrowRight className="ml-4 transition-transform group-hover:translate-x-2" size={18} strokeWidth={2.5} />
               </Button>
             </Link>
             <Link to="/contact">
-              <Button variant="ghost" className="w-full sm:w-auto text-lg px-10 py-5">
+              <Button variant="ghost" className="w-full sm:w-auto text-sm tracking-[0.2em] uppercase px-12 py-5 font-bold">
                 Visit Us
               </Button>
             </Link>
@@ -56,14 +56,14 @@ export default function Home() {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce-slow">
-          <span className="text-surface/80 text-sm tracking-widest uppercase font-medium mb-2">Scroll Down</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-surface/80 to-transparent"></div>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center">
+          <span className="text-surface text-xs tracking-[0.3em] uppercase font-bold mb-4 opacity-80">Discover</span>
+          <div className="w-[2px] h-16 bg-gradient-to-b from-surface to-transparent animate-slide-up origin-top"></div>
         </div>
       </section>
 
       {/* Featured Section */}
-      <section className="py-32 bg-background">
+      <section className="py-40 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <RevealSection>
             <SectionHeader 
@@ -131,15 +131,16 @@ export default function Home() {
       </section>
 
       {/* Story Section */}
-      <section className="py-32 bg-primary text-surface relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <section className="py-40 bg-primary text-surface relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <RevealSection>
-              <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8 tracking-tight">The Pursuit of Perfection</h2>
-              <p className="text-surface/80 text-lg md:text-xl leading-relaxed mb-6 font-light">
+              <h3 className="text-secondary text-sm font-bold tracking-[0.3em] uppercase mb-6">Our Legacy</h3>
+              <h2 className="text-6xl md:text-7xl font-serif font-bold mb-10 tracking-tighter leading-[1.1]">The Pursuit of Perfection</h2>
+              <p className="text-surface/80 text-xl leading-relaxed mb-8 font-light">
                 Founded in 2018, Lumière was born from a simple belief: that coffee is more than just a morning routine—it's an experience, a craft, and a moment of connection.
               </p>
-              <p className="text-surface/80 text-lg md:text-xl leading-relaxed mb-10 font-light">
+              <p className="text-surface/80 text-xl leading-relaxed mb-12 font-light">
                 We ethically source the highest quality beans from sustainable farms worldwide, and roast them locally to bring out their intrinsic flavors. Every cup we serve is a testament to our dedication to the art of coffee.
               </p>
               <Link to="/about">
