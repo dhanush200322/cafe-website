@@ -80,7 +80,7 @@ export default function Gallery() {
           </div>
         ) : (
           <RevealSection>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[200px] md:auto-rows-[300px]">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 auto-rows-[200px] md:auto-rows-[350px]">
               {images.map((image, idx) => {
                 // Make the 1st item span 2x2, and the 4th item span 2 columns
                 let spanClass = "";
@@ -90,15 +90,15 @@ export default function Gallery() {
                 return (
                   <div 
                     key={image.id} 
-                    className={`relative overflow-hidden rounded-2xl shadow-sm group bg-surface ${spanClass}`}
+                    className={`relative overflow-hidden group bg-surface ${spanClass}`}
                   >
                     <GalleryImage src={image.url} alt={image.title} />
-                    <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center p-4 text-center backdrop-blur-[2px]">
-                      <div className="transform translate-y-8 group-hover:translate-y-0 transition-all duration-500 ease-out">
-                        <span className="text-surface font-serif text-2xl md:text-3xl tracking-wide font-bold drop-shadow-lg">
+                    <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center p-8 text-center">
+                      <div className="transform translate-y-12 group-hover:translate-y-0 transition-all duration-700 ease-out">
+                        <span className="text-secondary font-serif text-3xl md:text-5xl tracking-tight font-bold">
                           {image.title}
                         </span>
-                        <div className="w-12 h-1 bg-secondary mx-auto mt-4 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 delay-100"></div>
+                        <div className="w-16 h-[2px] bg-surface mx-auto mt-6 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 delay-200"></div>
                       </div>
                     </div>
                   </div>

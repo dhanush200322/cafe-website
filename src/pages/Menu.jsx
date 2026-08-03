@@ -73,30 +73,30 @@ export default function Menu() {
           </div>
         ) : (
           data.map((category, index) => (
-            <RevealSection key={index} className="mb-24 last:mb-0">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-10 pb-6 border-b border-secondary/20 flex items-center">
-                <span className="bg-secondary/10 text-secondary w-12 h-12 rounded-full flex items-center justify-center mr-5 text-xl">
-                  {index + 1}
-                </span>
+            <RevealSection key={index} className="mb-32 last:mb-0">
+              <h2 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-16 pb-8 border-b-2 border-secondary/20 flex items-center justify-between tracking-tighter">
                 {category.category}
+                <span className="text-secondary/20 font-light text-6xl">
+                  0{index + 1}
+                </span>
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-16">
                 {category.items.map((item, idx) => (
-                  <div key={idx} className="group cursor-pointer hover:bg-surface/60 rounded-2xl p-5 -m-5 transition-all duration-300 hover:shadow-sm">
-                    <div className="flex justify-between items-baseline mb-3">
-                      <h3 className="text-xl md:text-2xl font-bold text-primary group-hover:text-secondary transition-colors relative flex items-center">
+                  <div key={idx} className="group cursor-pointer hover:bg-surface/40 rounded-2xl p-6 -m-6 transition-all duration-500 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                    <div className="flex justify-between items-baseline mb-4">
+                      <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary group-hover:text-secondary transition-colors relative flex items-center">
                         {item.name}
                         {idx === 0 && (
-                          <span className="ml-4 inline-block bg-secondary/10 text-secondary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-widest align-middle border border-secondary/20">
+                          <span className="ml-4 inline-block bg-secondary/10 text-secondary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-[0.2em] align-middle border border-secondary/20">
                             Signature
                           </span>
                         )}
                       </h3>
-                      <div className="flex-grow border-b-2 border-dotted border-textMuted/20 mx-4 transition-colors group-hover:border-secondary/40"></div>
-                      <span className="text-xl font-semibold text-primary bg-background/80 group-hover:bg-surface/0 px-2 transition-colors">${item.price.toFixed(2)}</span>
+                      <div className="flex-grow border-b-[3px] border-dotted border-textMuted/20 mx-6 transition-colors group-hover:border-secondary/30"></div>
+                      <span className="text-2xl font-serif font-semibold text-primary bg-background/80 group-hover:bg-transparent px-2 transition-colors">${item.price.toFixed(2)}</span>
                     </div>
-                    <p className="text-textMuted text-base font-light leading-relaxed pr-12">
+                    <p className="text-textMuted text-lg font-light leading-relaxed pr-8">
                       {item.description}
                     </p>
                   </div>
