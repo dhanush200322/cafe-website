@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex justify-between items-center transition-all duration-500 ${scrolled ? 'h-16' : 'h-24'}`}>
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-3xl font-serif font-bold text-primary tracking-tighter">
+            <Link to="/" className={`text-3xl font-serif font-bold tracking-tighter ${scrolled ? 'text-primary' : 'text-surface'}`}>
               Lumière.
             </Link>
           </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={`${
-                  isActive(link.path) ? 'text-secondary font-semibold after:scale-x-100' : 'text-primary hover:text-secondary after:scale-x-0 hover:after:scale-x-100'
+                  isActive(link.path) ? 'text-secondary font-semibold after:scale-x-100' : (scrolled ? 'text-primary hover:text-secondary' : 'text-surface hover:text-secondary/80') + ' after:scale-x-0 hover:after:scale-x-100'
                 } relative transition-colors duration-300 text-sm tracking-wide uppercase after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-secondary after:transition-transform after:duration-300 after:origin-right hover:after:origin-left`}
               >
                 {link.name}
@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary hover:text-secondary focus:outline-none"
+              className={`${scrolled ? 'text-primary' : 'text-surface'} hover:text-secondary focus:outline-none transition-colors`}
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>

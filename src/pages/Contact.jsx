@@ -147,7 +147,7 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`peer w-full bg-transparent border-b-2 px-0 py-4 text-primary focus:outline-none transition-colors placeholder-transparent ${errors.name ? 'border-red-500' : 'border-surface/40 focus:border-secondary'}`}
+                    className={`peer w-full bg-transparent border-b-2 px-0 py-4 text-primary focus:outline-none transition-colors placeholder-transparent ${errors.name ? 'border-red-500' : 'border-primary/20 focus:border-secondary'}`}
                     placeholder="Name"
                     aria-invalid={!!errors.name}
                   />
@@ -164,7 +164,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`peer w-full bg-transparent border-b-2 px-0 py-4 text-primary focus:outline-none transition-colors placeholder-transparent ${errors.email ? 'border-red-500' : 'border-surface/40 focus:border-secondary'}`}
+                    className={`peer w-full bg-transparent border-b-2 px-0 py-4 text-primary focus:outline-none transition-colors placeholder-transparent ${errors.email ? 'border-red-500' : 'border-primary/20 focus:border-secondary'}`}
                     placeholder="Email"
                     aria-invalid={!!errors.email}
                   />
@@ -181,7 +181,7 @@ export default function Contact() {
                     rows="4"
                     value={formData.message}
                     onChange={handleChange}
-                    className={`peer w-full bg-transparent border-b-2 px-0 py-4 text-primary focus:outline-none transition-colors placeholder-transparent resize-none ${errors.message ? 'border-red-500' : 'border-surface/40 focus:border-secondary'}`}
+                    className={`peer w-full bg-transparent border-b-2 px-0 py-4 text-primary focus:outline-none transition-colors placeholder-transparent resize-none ${errors.message ? 'border-red-500' : 'border-primary/20 focus:border-secondary'}`}
                     placeholder="Message"
                     aria-invalid={!!errors.message}
                   ></textarea>
