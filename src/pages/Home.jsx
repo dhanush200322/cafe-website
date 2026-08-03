@@ -37,7 +37,7 @@ export default function Home() {
           <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-serif font-bold text-surface mb-8 tracking-tighter leading-[0.9] drop-shadow-2xl mix-blend-overlay">
             Awaken Your Senses.
           </h1>
-          <p className="text-xl md:text-3xl text-surface mb-16 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
+          <p className="text-xl md:text-3xl text-surface mb-10 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md">
             Experience artisanal coffee crafted with passion, precision, and the world's finest beans.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center">
+        <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center">
           <span className="text-surface text-xs tracking-[0.3em] uppercase font-bold mb-4 opacity-80">Discover</span>
           <div className="w-[2px] h-16 bg-gradient-to-b from-surface to-transparent animate-slide-up origin-top"></div>
         </div>
