@@ -82,7 +82,8 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12">
           {/* Contact Info (Dark Card) */}
           <RevealSection className="lg:col-span-5 relative z-10">
             <div className="bg-primary text-surface p-12 lg:p-16 h-full flex flex-col justify-center">
