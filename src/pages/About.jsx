@@ -43,7 +43,7 @@ export default function About() {
         <div className="relative mb-40 lg:mb-64">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <RevealSection className="lg:col-span-7 relative z-10">
-              <div className="bg-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.05)] rounded-2xl border border-secondary/10 lg:-mr-32 relative">
+              <div className="bg-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.05)] rounded-2xl border border-secondary/30 lg:-mr-32 relative">
                 <h3 className="text-sm uppercase tracking-[0.3em] text-secondary font-bold mb-6">Our Philosophy</h3>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 tracking-tighter">The Pursuit of the Perfect Pour</h2>
                 <p className="text-textMuted text-lg leading-relaxed mb-6 font-light">
@@ -58,7 +58,7 @@ export default function About() {
               <img 
                 src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80" 
                 alt="Artisanal coffee roasting process" 
-                className="w-full h-[700px] object-cover shadow-2xl"
+                className="w-full h-[700px] object-cover shadow-2xl rounded-2xl"
                 loading="lazy"
               />
             </RevealSection>
@@ -72,12 +72,12 @@ export default function About() {
               <img 
                 src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" 
                 alt="People enjoying coffee in a cozy cafe community space" 
-                className="w-full h-[700px] object-cover shadow-2xl"
+                className="w-full h-[700px] object-cover shadow-2xl rounded-2xl"
                 loading="lazy"
               />
             </RevealSection>
             <RevealSection className="lg:col-span-7 relative z-10 delay-200">
-              <div className="bg-primary text-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.15)] rounded-2xl border border-secondary/10 lg:-ml-32 relative">
+              <div className="bg-primary text-surface p-12 lg:p-16 shadow-[0_30px_60px_rgb(0,0,0,0.15)] rounded-2xl border border-secondary/30 lg:-ml-32 relative">
                 <h3 className="text-sm uppercase tracking-[0.3em] text-secondary font-bold mb-6">Our Sanctuary</h3>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 tracking-tighter">A Space for Community</h2>
                 <p className="text-surface/80 text-lg leading-relaxed mb-6 font-light">
