@@ -90,8 +90,17 @@ export default function Home() {
 
             <RevealSection className="delay-200">
               <Card>
-                <div className="h-72 overflow-hidden bg-primary/5 flex items-center justify-center">
-                  <Coffee size={80} className="text-secondary/50 group-hover:scale-110 transition-transform duration-700" />
+                <div className="h-72 overflow-hidden bg-primary/5">
+                  <img 
+                    src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" 
+                    alt="Single Origin Pour Over coffee dripping" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                    loading="lazy" 
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80';
+                    }}
+                  />
                 </div>
                 <div className="p-10">
                   <div className="flex justify-between items-start mb-4">
