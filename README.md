@@ -12,7 +12,7 @@
 
   <br />
 
-  [**🌐 Live Demo**](https://cafe-website-demo.vercel.app/) • 
+  [**🌐 Live Demo**](https://cafe-website-one-tau.vercel.app/) • 
   [**💻 GitHub Repository**](https://github.com/dhanush200322/cafe-website) • 
   [**📄 Internship Project**](#-project-overview)
 </div>
