@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=150&h=150&q=80" alt="Lumière Logo" width="120" style="border-radius: 50%; border: 4px solid #C59D5F;" />
+  <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=80" alt="Lumière Cafe Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
   
   # Lumière Cafe Experience
 
@@ -12,51 +12,68 @@
 
   <br />
 
-  [**View Live Demo**](https://cafe-website-demo.vercel.app/) • 
-  [**Report Bug**](https://github.com/dhanush200322/cafe-website/issues) • 
-  [**Request Feature**](https://github.com/dhanush200322/cafe-website/issues)
+  [**🌐 Live Demo**](https://cafe-website-demo.vercel.app/) • 
+  [**💻 GitHub Repository**](https://github.com/dhanush200322/cafe-website) • 
+  [**📄 Internship Project**](#-project-overview)
 </div>
 
 ---
 
-## ✦ Project Overview
+## 📊 Project Statistics
 
-**Lumière Cafe** is a production-ready frontend architecture engineered to deliver a luxury, immersive digital experience. Built entirely without heavy animation libraries like Framer Motion, it relies exclusively on heavily optimized, native CSS keyframes and Intersection Observers to achieve buttery-smooth 60fps micro-interactions.
+```text
+📄 Pages: 5 (Home, Menu, About, Gallery, Contact)
+🎨 Components: 20+ Reusable UI Elements
+📱 Responsive: 100% Mobile-First
+⚡ Build Tool: Vite
+🛠 Tech Stack: React + Tailwind CSS
+```
 
 ---
 
-## ✦ Showcase
+## ✨ Key Highlights
+
+- **Premium UI/UX:** Luxury aesthetic with consistent typography, custom shadows, and a unified color palette.
+- **Mobile-First Responsive:** Flawless scaling from mobile (375px) to ultra-wide desktop displays.
+- **Glassmorphism:** Premium translucent navigation and card overlays using `backdrop-blur`.
+- **Zero-Dependency Animations:** Cinematic scroll reveals, Ken Burns zoom effects, and haptic shakes using native CSS keyframes.
+- **Fast Performance:** Aggressively optimized `< 300kB` bundle size with strict lazy loading.
+- **Accessibility (a11y):** Fully keyboard navigable with semantic HTML and explicit ARIA attributes.
+- **Robust Image Handling:** Built-in React Synthetic `onError` fallbacks preventing layout shifts.
+
+---
+
+## 📸 Screenshots
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Hero Section</b></td>
-      <td align="center"><b>Menu Experience</b></td>
+      <td align="center"><b>Home Page</b></td>
+      <td align="center"><b>Menu Page</b></td>
     </tr>
     <tr>
-      <td><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80" alt="Hero Interface" /></td>
-      <td><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Menu Interface" /></td>
+      <td><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Home Interface" /></td>
+      <td><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Menu Interface" /></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Gallery Page</b></td>
+      <td align="center"><b>Contact Page</b></td>
+    </tr>
+    <tr>
+      <td><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=80" alt="Gallery Interface" /></td>
+      <td><img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=600&q=80" alt="Contact Interface" /></td>
     </tr>
   </table>
+  <br />
+  <i>(Note: For the final portfolio touch, replace these image URLs with local screenshots of your actual deployed application)</i>
 </div>
-
----
-
-## ✦ Core Features
-
-| Feature | Description | Technical Implementation |
-| :--- | :--- | :--- |
-| **Glassmorphism UI** | Premium translucent navigation and card overlays. | `backdrop-blur-md` alongside precision opacity scales. |
-| **Zero-Dependency Animations** | Cinematic scroll reveals and Ken Burns zoom effects. | Intersection Observer API + Custom Tailwind Keyframes. |
-| **Robust Error Handling** | Zero layout shifts during network throttling. | React Synthetic `onError` events with persistent fallbacks. |
-| **Strict Form Validation** | Real-time, accessible form validation with haptic visual feedback. | Pure React State paired with `animate-shake`. |
 
 ---
 
 ## ✦ Technical Architecture
 
 ### ⚡ Technology Stack
-- **Core:** React 18, DOM Manipulation via Refs
+- **Core:** React 18
 - **Build Tool:** Vite (ESBuild)
 - **Styling:** Tailwind CSS v4
 - **Routing:** React Router DOM v6
@@ -67,9 +84,9 @@
 src/
 ├── assets/           # Static local assets (SVGs, core images)
 ├── components/
-│   └── common/       # Reusable atomic UI (Button, Card, SectionHeader)
+│   └── common/       # Reusable atomic UI (Button, Card, SectionHeader, Navbar)
 ├── data/             # JSON-structured constants (Gallery & Menu Data)
-├── pages/            # Core routing views (Home, About, Menu, Contact)
+├── pages/            # Core routing views (Home, About, Menu, Contact, Gallery)
 ├── styles/           # Global Tailwind directives & configurations
 ├── utils/            # Shared logic (useScrollReveal Hook)
 └── main.jsx          # React DOM mounting and router configuration
@@ -109,28 +126,6 @@ src/
 
 ---
 
-## ✦ Engineering Standards
-
-### 🏎️ Performance
-The application is aggressively optimized to maintain a `< 300kB` JavaScript bundle payload. Images are strictly lazy-loaded below the fold, resulting in perfect Core Web Vitals on mobile and desktop environments.
-
-### 📱 Responsive Design
-The UI architecture utilizes a fluid grid system breaking natively at `375px`, `768px`, `1024px`, and `1536px` to ensure visual perfection across all mobile, tablet, and ultrawide interfaces.
-
-### ♿ Accessibility (a11y)
-Semantic HTML5 tags (`<article>`, `<nav>`, `<main>`) form the structure. All interactive elements possess explicit `aria-labels`, `aria-describedby` error bindings, and high-contrast focus rings for keyboard navigation.
-
----
-
-## ✦ Roadmap & Future Improvements
-
-- [ ] **E-Commerce Integration:** Headless Shopify or Stripe integration for bean purchases.
-- [ ] **Headless CMS:** Sanity.io implementation for dynamic menu curation.
-- [ ] **Table Reservations:** Supabase/PostgreSQL backend for booking tables.
-- [ ] **Internationalization:** i18next integration for FR/EN language toggling.
-
----
-
 ## ✦ Author
 
 **Dhanush**
@@ -145,5 +140,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for f
 <br />
 
 <div align="center">
-  <i>Designed and engineered with passion.</i>
+  <i>Designed and engineered for perfection.</i>
 </div>
