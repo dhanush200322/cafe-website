@@ -33,7 +33,7 @@ export default function Home() {
           />
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-slide-up mt-8">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-slide-up mt-8 pb-32 lg:pb-40">
           <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-serif font-bold text-surface mb-8 tracking-tighter leading-[0.9] drop-shadow-2xl mix-blend-overlay">
             Awaken Your Senses.
           </h1>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center">
+        <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center [@media(max-height:700px)]:hidden">
           <span className="text-surface text-xs tracking-[0.3em] uppercase font-bold mb-4 opacity-80">Discover</span>
           <div className="w-[2px] h-16 bg-gradient-to-b from-surface to-transparent animate-slide-up origin-top"></div>
         </div>
