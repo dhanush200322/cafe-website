@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] md:min-h-[750px] h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100svh] md:min-h-[85vh] flex items-center justify-center overflow-hidden py-32">
         <div className="absolute inset-0 z-0 bg-primary overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
@@ -33,7 +33,7 @@ export default function Home() {
           />
         </div>
         
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-slide-up mt-8 pb-32 lg:pb-40">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto animate-slide-up">
           <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-serif font-bold text-surface mb-8 tracking-tighter leading-[0.9] drop-shadow-2xl mix-blend-overlay">
             Awaken Your Senses.
           </h1>
