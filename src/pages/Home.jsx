@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[600px] md:min-h-[750px] h-[85vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 bg-primary overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
